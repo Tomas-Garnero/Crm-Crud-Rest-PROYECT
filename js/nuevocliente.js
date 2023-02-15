@@ -32,6 +32,4 @@ import { nuevoCliente } from "./API.js";
     function validar(obj) {
         return !Object.values(obj).every(input => input !== "");
     }
-
-
 })();
