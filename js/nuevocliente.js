@@ -1,4 +1,5 @@
 import { mostrarAlerta } from "./funciones.js";
+import { nuevoCliente } from "./API.js";
 
 (function() {
     const formulario = document.querySelector("#formulario");
@@ -25,7 +26,7 @@ import { mostrarAlerta } from "./funciones.js";
             return;
         }
 
-        console.log("Si se paso la validación");
+        nuevoCliente(cliente);
     }
 
     function validar(obj) {
